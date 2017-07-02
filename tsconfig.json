@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "allowJs": true,
+    "jsx": "react",
+    "rootDir": "src",
+    "target": "ES6"
+  }
+}

@@ -1,7 +1,7 @@
-const CHANGE_CONTENT = 'CHANGE_CONTENT';
+import * as ActionTypes from './../constants/actionTypes';
 
 export function changeContent() {
   return {
-    type: CHANGE_CONTENT,
+    type: ActionTypes.CHANGE_CONTENT,
   }
 }

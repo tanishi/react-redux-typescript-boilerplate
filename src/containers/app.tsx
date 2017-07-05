@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 
-import { changeContent } from './../actions/actions';
+import { changeContent } from '../redux/modules/reducer.ts';
 
 interface Props {
   content: string;
@@ -12,9 +12,8 @@ interface State {
 }
 
 const App = (props) => {
-  console.log(props);
   const { state, changeContent } = props;
-  console.log(changeContent);
+
   return (
     <div onClick={changeContent}>{state.content}</div>
   );

@@ -17,17 +17,17 @@ const App = (props) => {
   return (
     <div onClick={changeContent}>{state.content}</div>
   );
-}
+};
 
 function mapStateToProps(state : State) {
   return {
-    state
+    state,
   }
 }
 
 function mapDispatchProps(dispatch) {
   return {
-    changeContent: () => dispatch(changeContent())
+    changeContent: () => dispatch(changeContent()),
   }
 }
 

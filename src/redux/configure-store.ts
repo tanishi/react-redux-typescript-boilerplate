@@ -2,7 +2,7 @@ import { createStore } from 'redux';
 import reducer from './modules/reducer'
 
 const initialState = {
-  content: 'Hello World'
+  content: 'Hello World',
 }
 
 const store = createStore(reducer, initialState);

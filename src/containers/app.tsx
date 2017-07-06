@@ -1,7 +1,8 @@
 import * as React from 'react';
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { changeContent } from '../redux/modules/reducer.ts';
+import * as Actions from '../redux/modules/reducer.ts';
 
 interface Props {
   content: string;
@@ -26,9 +27,7 @@ function mapStateToProps(state : State) {
 }
 
 function mapDispatchProps(dispatch) {
-  return {
-    changeContent: () => dispatch(changeContent()),
-  }
+  return bindActionCreators({ ...Actions }, dispatch);
 }
 
 const AppContainer = connect(mapStateToProps, mapDispatchProps)(App);

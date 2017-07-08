@@ -2,7 +2,8 @@ import * as React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import * as Actions from '../redux/modules/reducer.ts';
+import * as Actions from '../redux/modules/reducer';
+
 
 interface Props {
   content: string;
